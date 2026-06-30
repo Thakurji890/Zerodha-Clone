@@ -12,7 +12,7 @@ const Hero = () => {
             more
           </p>
           <button
-            className="p-2 btn btn-primary fs-5"
+            className="p-2 btn btn-primary fs-5 mb-5"
             style={{ width: "10%", margin: "0 auto" }}
           >
             Signup Now
