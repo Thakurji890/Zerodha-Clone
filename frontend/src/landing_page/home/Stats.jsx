@@ -1,4 +1,3 @@
-import React from "react";
 import { Arrow } from "../../icons/Arrow";
 
 const Stats = () => {
@@ -37,7 +36,7 @@ const Stats = () => {
         </div>
         <div className="col-6">
           <img src="image/ecosystem.png" alt="" style={{ width: "90%" }} />
-          <div className="textx-center">
+          <div className="text-center">
             <a className="mx-5" style={{ textDecoration: "none" }}>
               Explore our products <Arrow color="blue" />
             </a>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Awards = () => {
   return (
     <div className="container mt-5">
@@ -14,7 +12,7 @@ const Awards = () => {
         <div className="col-6 p-5 mt-5">
           <h1>Largest stock broker in India</h1>
           <p>
-            3+ millio Zerodha contribute to over 20% of allretail order volumes
+            3+ million Zerodha clients contribute to over 20% of all retail order volumes
             in India daily by trading and investing in:
           </p>
           <div className="row mt-5">
@@ -24,7 +22,7 @@ const Awards = () => {
                   <p>Futures and Options</p>
                 </li>
                 <li>
-                  <p>Commondity derivatives</p>
+                  <p>Commodity derivatives</p>
                 </li>
                 <li>
                   <p>Currency derivatives</p>
@@ -40,7 +38,7 @@ const Awards = () => {
                   <p>Direct Mutual funds</p>
                 </li>
                 <li>
-                  <p>Bonds and Goverment Security </p>
+                  <p>Bonds and Government Securities </p>
                 </li>
               </ul>
             </div>
