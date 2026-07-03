@@ -1,22 +1,24 @@
+import "./css/homePage.css";
+
 const Awards = () => {
   return (
     <div className="container mt-5">
       <div className="row">
-        <div className="col-6 p-5">
+        <div className="col-12 col-md-6 p-3 p-md-5">
           <img
             src="image/largestBroker.svg"
             alt="Largest Broker Img"
             className="mt-5"
           />
         </div>
-        <div className="col-6 p-5 mt-5">
+        <div className="col-12 col-md-6 p-3 p-md-5 mt-5">
           <h1>Largest stock broker in India</h1>
           <p>
             3+ million Zerodha clients contribute to over 20% of all retail order volumes
             in India daily by trading and investing in:
           </p>
           <div className="row mt-5">
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <ul>
                 <li>
                   <p>Futures and Options</p>
@@ -29,7 +31,7 @@ const Awards = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <ul>
                 <li>
                   <p>Stocks & IPOs</p>
@@ -43,7 +45,7 @@ const Awards = () => {
               </ul>
             </div>
           </div>
-          <img src="image/pressLogos.png" alt="" style={{ width: "80%" }} />
+          <img src="image/pressLogos.png" alt="" className="awards-press-logo" />
         </div>
       </div>
     </div>

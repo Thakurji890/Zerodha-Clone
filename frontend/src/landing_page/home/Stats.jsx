@@ -1,10 +1,11 @@
 import { Arrow } from "../../icons/Arrow";
+import "./css/homePage.css";
 
 const Stats = () => {
   return (
     <div className="container p-3">
       <div className="row p-5">
-        <div className="col-6 p-5">
+        <div className="col-12 col-md-6 p-3 p-md-5">
           <h1 className="fs-2 mb-5">Trust with confidence</h1>
 
           <h6 className="fs-4">Customer-first always</h6>
@@ -34,13 +35,13 @@ const Stats = () => {
             money.
           </p>
         </div>
-        <div className="col-6">
-          <img src="image/ecosystem.png" alt="" style={{ width: "90%" }} />
+        <div className="col-12 col-md-6">
+          <img src="image/ecosystem.png" alt="" className="stats-ecosystem-img" />
           <div className="text-center">
-            <a href="" className="mx-5" style={{ textDecoration: "none" }}>
+            <a href="" className="mx-5 custom-link">
               Explore our products <Arrow color="blue" />
             </a>
-            <a href="" style={{ textDecoration: "none" }}>
+            <a href="" className="custom-link">
               Try Kite demo <Arrow color="blue" />
             </a>
           </div>
