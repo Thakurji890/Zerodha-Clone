@@ -37,10 +37,10 @@ const Stats = () => {
         <div className="col-6">
           <img src="image/ecosystem.png" alt="" style={{ width: "90%" }} />
           <div className="text-center">
-            <a className="mx-5" style={{ textDecoration: "none" }}>
+            <a href="" className="mx-5" style={{ textDecoration: "none" }}>
               Explore our products <Arrow color="blue" />
             </a>
-            <a style={{ textDecoration: "none" }}>
+            <a href="" style={{ textDecoration: "none" }}>
               Try Kite demo <Arrow color="blue" />
             </a>
           </div>
