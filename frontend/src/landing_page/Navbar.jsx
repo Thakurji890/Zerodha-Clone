@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary border-bottom"
+      class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top"
       style={{ backgroundColor: "#FFF" }}
     >
       <div class="container">
