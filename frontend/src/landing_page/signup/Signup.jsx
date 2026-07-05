@@ -2,12 +2,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 
 const Signup = () => {
-  return (
-    <>
-      <Navbar />
-      <Footer />
-    </>
-  );
+  return <></>;
 };
 
 export default Signup;

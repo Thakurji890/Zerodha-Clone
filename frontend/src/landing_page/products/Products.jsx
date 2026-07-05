@@ -8,12 +8,10 @@ import Footer from "../Footer";
 const Products = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <LeftSection />
       <RightSection />
       <Universe />
-      <Footer />
     </>
   );
 };

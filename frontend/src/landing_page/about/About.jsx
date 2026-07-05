@@ -6,10 +6,8 @@ import Hero from "./Hero";
 const About = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <Team />
-      <Footer />
     </>
   );
 };
