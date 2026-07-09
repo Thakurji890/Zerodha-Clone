@@ -39,10 +39,10 @@ const Stats = () => {
           <img src="image/ecosystem.png" alt="" className="stats-ecosystem-img" />
           <div className="text-center">
             <a href="" className="mx-5 custom-link">
-              Explore our products <Arrow color="blue" />
+              Explore our products <Arrow color="#387ed1" />
             </a>
             <a href="" className="custom-link">
-              Try Kite demo <Arrow color="blue" />
+              Try Kite demo <Arrow color="#387ed1" />
             </a>
           </div>
         </div>

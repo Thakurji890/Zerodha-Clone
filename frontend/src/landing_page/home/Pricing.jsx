@@ -12,7 +12,7 @@ const Pricing = () => {
             in India. Flat fees and no hidden charges.
           </p>
           <a href="" className="custom-link">
-            See pricing <Arrow color="blue" />
+            See pricing <Arrow color="#387ed1" />
           </a>
         </div>
 
