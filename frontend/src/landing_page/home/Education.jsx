@@ -20,14 +20,14 @@ const Education = () => {
           </p>
           <a href="" className="custom-link">
             Varsity
-            <Arrow color="#387ed1" />
+            <Arrow color="currentColor" />
           </a>
           <p className="mt-5">
             TradingQ&A, the most active trading and investment community in
             India for all your market related queries.
           </p>
           <a href="" className="custom-link">
-            TradingQ&A <Arrow color="#387ed1" />
+            TradingQ&A <Arrow color="currentColor" />
           </a>
         </div>
       </div>

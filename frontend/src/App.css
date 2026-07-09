@@ -187,3 +187,12 @@ a {
   text-decoration: none !important;
   color: black;
 }
+
+#link a {
+  color: #387ed1;
+}
+
+#link a:hover {
+  cursor: pointer;
+  color: #444;
+}

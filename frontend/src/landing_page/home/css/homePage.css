@@ -1,15 +1,18 @@
 .custom-link {
   text-decoration: none;
+  color: #387ed1;
 }
 
 .custom-link:hover {
   text-decoration: none;
+  color: #444;
 }
 
 .hero-signup-btn {
   margin: 0 auto;
   width: 100%;
   max-width: 200px;
+  background-color: #387ed1;
 }
 @media (min-width: 768px) {
   .hero-signup-btn {
