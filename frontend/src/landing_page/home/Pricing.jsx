@@ -3,7 +3,7 @@ import "./css/homePage.css";
 
 const Pricing = () => {
   return (
-    <div className="container mb-5">
+    <div className="container mt-5">
       <div className="row">
         <div className="col-12 col-md-4">
           <h1>Unbeatable pricing</h1>
