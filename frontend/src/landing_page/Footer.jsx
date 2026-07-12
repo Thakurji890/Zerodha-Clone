@@ -1,56 +1,83 @@
+import React from "react";
+import { FaXTwitter, FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp, FaTelegram } from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <footer style={{ background: "rgb(250, 250, 250)" }}>
       <div className="container border-top mt-5 p-4">
         <div className="row mt-5">
           <div className="col">
-            <img src="image/logo.svg" alt="logo" style={{ width: "75%" }} />
-            <p>&copy; 2010 - 2026, Zerodha Broking Ltd. All rights reserved.</p>
-            <div className="row"></div>
+            <img src="image/logo.svg" alt="logo" style={{ width: "50%" }} className="mb-3" />
+            <p className="text-muted" style={{ fontSize: "14px" }}>
+              &copy; 2010 - 2026, Zerodha Broking Ltd. <br />
+              All rights reserved.
+            </p>
+            
+            <div className="mt-4 d-flex gap-4 fs-5 text-muted border-bottom pb-4 mb-4">
+              <a href="#" className="text-muted"><FaXTwitter /></a>
+              <a href="#" className="text-muted"><FaFacebook /></a>
+              <a href="#" className="text-muted"><FaInstagram /></a>
+              <a href="#" className="text-muted"><FaLinkedin /></a>
+            </div>
+            
+            <div className="mt-3 d-flex gap-4 fs-5 text-muted">
+              <a href="#" className="text-muted"><FaYoutube /></a>
+              <a href="#" className="text-muted"><FaWhatsapp /></a>
+              <a href="#" className="text-muted"><FaTelegram /></a>
+            </div>
+            
+            <div className="mt-4 pt-2">
+              <a href="#" className="text-muted me-3">
+                <img src="image/googlePlayBadge.svg" alt="Google Play" style={{ height: "40px" }} />
+              </a>
+              <a href="#" className="text-muted">
+                <img src="image/appstoreBadge.svg" alt="App Store" style={{ height: "40px" }} />
+              </a>
+            </div>
           </div>
           <div className="col">
-            <p>Company</p>
-            <a href=""> About</a>
-            <a href=""> Philosophy</a>
-            <a href=""> Press & media</a>
-            <a href=""> Careers</a>
-            <a href=""> Zerodha Cares (CSR)</a>
-            <a href=""> Zerodha.tech</a>
-            <a href=""> Open source</a>
-            <a href=""> Referral program</a>
+            <p className="fs-5 mb-4" style={{ color: "#424242", fontWeight: 500 }}>Account</p>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Open demat account</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Minor demat account</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">NRI demat account</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">HUF demat account</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Commodity</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Dematerialisation</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Fund transfer</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">MTF</a>
           </div>
           <div className="col">
-            <p>Support</p>
-            <a href="">Contact us</a>
-            <a href="">Support portal</a>
-            <a href="">How to file a complaint?</a>
-            <a href="">Status of your complaints</a>
-            <a href="">Bulletin</a>
-            <a href="">Circular</a>
-            <a href="">Z-Connect blog</a>
-            <a href="">Downloads</a>
+            <p className="fs-5 mb-4" style={{ color: "#424242", fontWeight: 500 }}>Support</p>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Contact us</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Support portal</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">How to file a complaint?</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Status of your complaints</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Bulletin</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Circular</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Z-Connect blog</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Downloads</a>
           </div>
           <div className="col">
-            <p>Account</p>
-            <a href=""> Open demat account</a>
-            <a href=""> Minor demat account</a>
-            <a href=""> NRI demat account</a>
-            <a href=""> HUF demat account</a>
-            <a href=""> Commodity</a>
-            <a href=""> Dematerialisation</a>
-            <a href=""> Fund transfer</a>
-            <a href=""> MTF</a>
+            <p className="fs-5 mb-4" style={{ color: "#424242", fontWeight: 500 }}>Company</p>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">About</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Philosophy</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Press & media</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Careers</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Zerodha Cares (CSR)</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Zerodha.tech</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Open source</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Referral program</a>
           </div>
           <div className="col">
-            <p>Quick links</p>
-            <a href=""> Upcoming IPOs</a>
-            <a href=""> Brokerage charges</a>
-            <a href=""> Market holidays</a>
-            <a href=""> Economic calendar</a>
-            <a href=""> Calculators</a>
-            <a href=""> Markets</a>
-            <a href=""> Sectors</a>
-            <a href=""> Gift Nifty</a>
+            <p className="fs-5 mb-4" style={{ color: "#424242", fontWeight: 500 }}>Quick links</p>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Upcoming IPOs</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Brokerage charges</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Market holidays</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Economic calendar</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Calculators</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Markets</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Sectors</a>
+            <a href="" className="d-block text-muted text-decoration-none mb-3">Gift Nifty</a>
           </div>
         </div>
         <div className="mt-5 text-muted" style={{ fontSize: "10px" }}>
