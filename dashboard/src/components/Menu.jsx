@@ -1,43 +1,36 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Menu = () => {
-  const [menu, setMenu] = useState(0);
-  const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const location = useLocation();
 
-  const handleMenuClick = ({ index }) => {
-    setMenu(index);
-  };
-
-  const handleProfileClick = ({ index }) => {
-    setIsProfileOpen(!isProfileOpen);
-  };
+  const navItems = [
+    { name: "Dashboard", path: "/", icon: "bi-speedometer2" },
+    { name: "Orders", path: "/orders", icon: "bi-card-list" },
+    { name: "Holdings", path: "/holdings", icon: "bi-briefcase" },
+    { name: "Positions", path: "/positions", icon: "bi-graph-up-arrow" },
+    { name: "Funds", path: "/funds", icon: "bi-wallet2" },
+    { name: "Profile", path: "/profile", icon: "bi-person-circle" },
+  ];
 
   return (
-    <div className="menu-container">
-      <img src="kite-logo.svg" alt="Kite Logo" style={{ width: "50px" }} />
-      <div className="menus">
-        <ul>
-          <li>
-            <p>Dashboard</p>
+    <div className="d-flex flex-column p-3 h-100 bg-white">
+      <Link to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none border-bottom pb-3 w-100">
+        <span className="fs-4 text-primary fw-bold">Kite</span>
+      </Link>
+      <ul className="nav nav-pills flex-column mb-auto mt-3 gap-2">
+        {navItems.map((item) => (
+          <li className="nav-item" key={item.name}>
+            <Link
+              to={item.path}
+              className={`nav-link ${location.pathname === item.path ? "active bg-primary text-white" : "text-dark"}`}
+            >
+              <i className={`bi ${item.icon} me-2`}></i>
+              {item.name}
+            </Link>
           </li>
-          <li>
-            <p>Orders</p>
-          </li>
-          <li>
-            <p>Holdings</p>
-          </li>
-          <li>
-            <p>Positions</p>
-          </li>
-          <li>
-            <p>Funds</p>
-          </li>
-          <li>
-            <p>Apps</p>
-          </li>
-        </ul>
-      </div>
+        ))}
+      </ul>
     </div>
   );
 };
