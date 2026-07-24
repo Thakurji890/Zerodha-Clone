@@ -13,9 +13,29 @@ import Profile from './Profile';
 const Home = () => {
   return (
     <div className="d-flex bg-light vh-100 overflow-hidden">
-      {/* Left Sidebar (Navigation Menu) */}
-      <div className="border-end bg-white" style={{ width: "250px", flexShrink: 0 }}>
+      <style>
+        {`
+          .watchlist-wrapper { width: 350px !important; flex-shrink: 0; }
+          @media (max-width: 991px) {
+            .watchlist-wrapper { width: 100% !important; height: 40vh; flex-shrink: 1; border-right: none !important; border-bottom: 1px solid #dee2e6; }
+          }
+        `}
+      </style>
+
+      {/* Left Sidebar (Desktop Navigation) */}
+      <div className="border-end bg-white d-none d-xl-block" style={{ width: "250px", flexShrink: 0 }}>
         <Menu />
+      </div>
+
+      {/* Offcanvas (Mobile Navigation) */}
+      <div className="offcanvas offcanvas-start" tabIndex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
+        <div className="offcanvas-header border-bottom">
+          <h5 className="offcanvas-title text-primary fw-bold" id="sidebarOffcanvasLabel">Kite</h5>
+          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div className="offcanvas-body p-0">
+          <Menu />
+        </div>
       </div>
 
       <div className="d-flex flex-column flex-grow-1 overflow-hidden">
@@ -23,15 +43,15 @@ const Home = () => {
         <TopBar />
 
         {/* Main Content Area */}
-        <div className="d-flex flex-grow-1 overflow-hidden">
+        <div className="d-flex flex-column flex-lg-row flex-grow-1 overflow-hidden">
           
-          {/* Watchlist (Fixed on the left side of the content area) */}
-          <div className="border-end bg-white overflow-auto shadow-sm" style={{ width: "350px", flexShrink: 0 }}>
+          {/* Watchlist */}
+          <div className="border-end bg-white overflow-auto shadow-sm watchlist-wrapper">
              <WatchList />
           </div>
 
           {/* Dynamic Content (Dashboard, Orders, etc) */}
-          <div className="flex-grow-1 p-4 overflow-auto bg-light">
+          <div className="flex-grow-1 p-3 p-md-4 overflow-auto bg-light w-100">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/orders" element={<Orders />} />
