@@ -7,8 +7,9 @@ const Positions = () => {
       <h3 className="mb-4 text-muted">Positions <span className="fs-5 fw-normal">({positions.length})</span></h3>
       <div className="card shadow-sm border-0">
         <div className="card-body p-0">
-          <table className="table table-hover mb-0">
-            <thead className="table-light text-muted">
+          <div className="table-responsive">
+            <table className="table table-hover mb-0 text-nowrap">
+              <thead className="table-light text-muted">
               <tr>
                 <th className="py-3 px-4">Product</th>
                 <th className="py-3 px-4">Instrument</th>
@@ -36,6 +37,7 @@ const Positions = () => {
               })}
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     </div>
