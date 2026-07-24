@@ -7,8 +7,9 @@ const Holdings = () => {
       <h3 className="mb-4 text-muted">Holdings <span className="fs-5 fw-normal">({holdings.length})</span></h3>
       <div className="card shadow-sm border-0">
         <div className="card-body p-0">
-          <table className="table table-hover mb-0">
-            <thead className="table-light text-muted">
+          <div className="table-responsive">
+            <table className="table table-hover mb-0 text-nowrap">
+              <thead className="table-light text-muted">
               <tr>
                 <th className="py-3 px-4">Instrument</th>
                 <th className="py-3 px-4 text-end">Qty.</th>
@@ -39,6 +40,7 @@ const Holdings = () => {
               })}
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     </div>
