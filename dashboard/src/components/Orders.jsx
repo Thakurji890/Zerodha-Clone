@@ -7,8 +7,9 @@ const Orders = () => {
       <h3 className="mb-4 text-muted">Orders</h3>
       <div className="card shadow-sm border-0">
         <div className="card-body p-0">
-          <table className="table table-hover mb-0">
-            <thead className="table-light">
+          <div className="table-responsive">
+            <table className="table table-hover mb-0 text-nowrap">
+              <thead className="table-light">
               <tr>
                 <th className="py-3 px-4">Time</th>
                 <th className="py-3 px-4">Instrument</th>
@@ -33,6 +34,7 @@ const Orders = () => {
               ))}
             </tbody>
           </table>
+          </div>
           {orders.length === 0 && <div className="p-4 text-center text-muted">No orders yet.</div>}
         </div>
       </div>
