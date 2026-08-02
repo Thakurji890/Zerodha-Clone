@@ -1,15 +1,16 @@
-import React from 'react';
-
 const Dashboard = () => {
   return (
     <div>
       <h3 className="mb-4 text-muted">Hi, John!</h3>
-      
+
       <div className="row mb-4">
         <div className="col-md-6 mb-3">
           <div className="card shadow-sm border-0 h-100">
             <div className="card-body">
-              <h5 className="text-muted fs-6 mb-3"><i className="bi bi-pie-chart-fill me-2 text-primary"></i> Equity</h5>
+              <h5 className="text-muted fs-6 mb-3">
+                <i className="bi bi-pie-chart-fill me-2 text-primary"></i>{" "}
+                Equity
+              </h5>
               <div className="d-flex justify-content-between align-items-center mb-4">
                 <div>
                   <span className="fs-3 fw-bold">₹1,45,230.00</span>
@@ -22,16 +23,21 @@ const Dashboard = () => {
               </div>
               <hr />
               <div className="text-center">
-                <a href="/funds" className="text-decoration-none">View statement</a>
+                <a href="/funds" className="text-decoration-none">
+                  View statement
+                </a>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div className="col-md-6 mb-3">
           <div className="card shadow-sm border-0 h-100">
             <div className="card-body">
-              <h5 className="text-muted fs-6 mb-3"><i className="bi bi-briefcase-fill me-2 text-primary"></i> Holdings (3)</h5>
+              <h5 className="text-muted fs-6 mb-3">
+                <i className="bi bi-briefcase-fill me-2 text-primary"></i>{" "}
+                Holdings (3)
+              </h5>
               <div className="row text-center mb-4 mt-4">
                 <div className="col-6 border-end">
                   <h4 className="text-success mb-1">+₹14,500.50</h4>
@@ -44,7 +50,9 @@ const Dashboard = () => {
               </div>
               <hr />
               <div className="text-center">
-                <a href="/holdings" className="text-decoration-none">View holdings</a>
+                <a href="/holdings" className="text-decoration-none">
+                  View holdings
+                </a>
               </div>
             </div>
           </div>
